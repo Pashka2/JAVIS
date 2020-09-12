@@ -11,7 +11,8 @@ import wolframalpha
 import json
 import requests
 
-engine = pyttsx3.int('sapi5')
+
+engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', 'voices[0].id')
 
